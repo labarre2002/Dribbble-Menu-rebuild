@@ -1,0 +1,230 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    height: 100vh;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: verdana;
+}
+
+.wrapper{
+    width: 90vw;
+    height: 90vh;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.one{
+    flex: 1;
+    position: relative;
+   border-right: 3px solid rgb(117, 117, 117);
+   overflow: hidden;
+}
+
+.one img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.5);
+    transition: .5s cubic-bezier(0.075,0.82,0.165,1);
+}
+
+
+
+.two{
+    flex: 1;
+    position: relative;
+    border-right: 3px solid rgb(117, 117, 117);
+    overflow: hidden;
+}
+
+.two img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.5);
+    transition: .5s cubic-bezier(0.075,0.82,0.165,1);
+}
+
+
+
+.three{
+    flex: 1;
+    position: relative;
+    border-right: 3px solid rgb(117, 117, 117);
+    overflow: hidden;
+}
+
+.three img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.5);
+    transition: .5s cubic-bezier(0.075,0.82,0.165,1);
+}
+
+
+
+.four{
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+   }
+
+.four  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.5);
+    transition: .5s cubic-bezier(0.075,0.82,0.165,1);
+}   
+
+
+
+.pic{
+    width: 100%;
+    height: 100%;
+}
+
+.pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+.number{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: black;
+    font-size: 16em;
+    font-family: verdana;
+    z-index: 5;
+
+}
+
+.rideau{
+   position: absolute;
+    inset:0;
+    background-color: white;
+    z-index: 3;
+    transition: .5s cubic-bezier(0.075,0.82,0.165,1) ;
+}
+
+.menu{
+    position: absolute;
+    top: 15px;
+    left: 18px;
+    width: 97%;
+    height: 10%;
+    display: flex;
+    padding: .2em;
+    z-index: 44;
+    background:#dcfd00 ;
+    border-radius: 12px;
+    
+}
+
+.menu > *:nth-child(1){
+flex-basis: 20%;
+}
+
+.menu > *:nth-child(2){
+    flex-basis:64%; 
+}
+.menu > *:nth-child(3){
+    flex-basis:6%;  
+}
+.menu > *:nth-child(4){
+    flex-basis:10%;
+}
+
+#arrow{
+width: 15px;
+}
+
+.liens{
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+   }
+
+nav{
+    display: flex;
+   
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    outline: none;
+    font-weight: bolder;
+    padding-left: 1em;
+    flex: 1 1 auto;
+  
+}
+
+.facture{
+   background: #000;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+button{
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: .5em;
+}
+
+.fac{
+    color: white;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-left: .5em;
+}
+
+.boule{
+    width: 7px;
+    height: 7px;
+    background: white;
+    border-radius: 100%;
+}
+
+.btn3{
+    display: flex;
+    align-items: center;
+   white-space: pre;
+    justify-content: center;
+    gap: .5em;
+}
+
+.item:hover  .rideau{
+    transform:translateY(-100%);
+}
+
+.pic:hover  img{
+    transform:scale(1);
+}
+
+.item:hover .number{
+   color: transparent;
+   -webkit-text-stroke:3px rgb(17, 17, 17) ;
+}
